@@ -1,7 +1,6 @@
 <h1>Collection of usefull HubSpot Modules and Macros</h1>
 <p>Feel free to use</p>
-<br>
-
+<hr/>
 <h2>Accordion Module</h2>
 <p>Accessible accordion module for HubSpot.</p>
 <p>This module allows you to create multiple sections of accordions on your website.</p>
