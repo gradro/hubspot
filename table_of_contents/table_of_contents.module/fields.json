@@ -1,0 +1,25 @@
+[
+  {
+    "name": "styles",
+    "label": "Styles",
+    "children": [
+      {
+        "name" : "heading_fontsize",
+        "label" : "Heading Font Size",
+        "required" : false,
+        "locked" : false,
+        "display" : "text",
+        "step" : 1,
+        "type" : "number",
+        "min" : null,
+        "max" : null,
+        "inline_help_text": "",
+        "suffix": "px",
+        "help_text": "",
+        "default" : 18 
+      }
+    ],
+    "type": "group",
+    "tab": "STYLE"
+  }
+]
