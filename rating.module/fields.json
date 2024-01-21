@@ -1,0 +1,90 @@
+[ 
+    {
+        "name" : "rating",
+        "label" : "Rating",
+        "required" : true,
+        "locked" : false,
+        "display" : "text",
+        "step" : 0.1,
+        "type" : "number",
+        "min" : 1,
+        "max" : 5,
+        "inline_help_text": "Rating between 1 and 5",
+        "help_text": "",
+        "default" : 4.8  
+    },
+    {
+        "name": "description",
+        "label": "Description",
+        "required": false,
+        "locked": false,
+        "type": "richtext",
+        "inline_help_text": "",
+        "help_text": "",
+        "default": "<h3>Rating Module</h3><p>Best on the market</p>" 
+    },
+    {
+        "name": "styles",
+        "label": "Styles",
+        "type": "group",
+        "tab": "STYLE",
+        "children": [
+                {
+                    "name": "icon_size",
+                    "label": "Icon size",
+                    "required": false,
+                    "locked": false,
+                    "children": [
+                        {
+                            "name" : "desktop",
+                            "label" : "Desktop",
+                            "required" : true,
+                            "locked" : false,
+                            "display" : "text",
+                            "step" : 1,
+                            "suffix": "px",
+                            "type" : "number",
+                            "min" : 16,
+                            "max" : null,
+                            "inline_help_text": "",
+                            "help_text": "",
+                            "default" : 60 
+                        },
+                        {
+                            "name" : "mobile",
+                            "label" : "Mobile",
+                            "required" : true,
+                            "locked" : false,
+                            "display" : "text",
+                            "step" : 1,
+                            "suffix": "px",
+                            "type" : "number",
+                            "min" : 16,
+                            "max" : null,
+                            "inline_help_text": "",
+                            "help_text": "",
+                            "default" : 40 
+                        }
+                    ],
+                    "type": "group",
+                    "inline_help_text": "",
+                    "help_text": "Set icon size in px.",
+                    "default": {} 
+                },
+                {
+                    "name": "icon_color",
+                    "label": "Icon color",
+                    "required": false,
+                    "locked": false,
+                    "inline_help_text": "",
+                    "help_text": "",
+                    "type": "color",
+                    "show_opacity": false,
+                    "default": {
+                        "color": "#ffc107",
+                        "opacity": 100
+                    } 
+                }
+        ]
+    }
+]

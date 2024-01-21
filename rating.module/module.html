@@ -1,0 +1,51 @@
+{# Module Markup #}
+<section class="rating">
+
+    {# Optional description #}
+    {% if module.description %}
+       <div class="rating-description">
+            {% inline_rich_text 'rating_description' value='{{ module.description }}' field='description'%}
+       </div>
+    {% endif %}
+
+    {# Rating #}
+    <div class="score">
+        <strong>{{ module.rating|float }}</strong>
+        <div class="rating-stars">
+            {% for star in range(0, 5) %} 
+                {# rate star #}
+                {% if loop.index <= module.rating %}
+                    {% icon style="SOLID" name="star" unicode="f005", no_wrapper=True %} 
+                {# rate half star #}
+                {% elif module.rating|round > module.rating and module.rating|round == loop.index %}
+                    {% icon style="SOLID" icon_set="fontawesome-5.14.0" name="Alternate Star Half", no_wrapper=True %} 
+                {# rate empty star #}
+                {% else %}
+                    {% icon style="REGULAR" name="star" unicode="f005", no_wrapper=True %} 
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+
+</section>
+
+{# Stylesheet (CSS) #}
+{% require_css %}
+    <style>
+        {% scope_css %}
+            .rating .score svg,
+            .rating .score i {
+                fill: {{ module.styles.icon_color.color }};
+                color: {{ module.styles.icon_color.color }};
+                width: {{ module.styles.icon_size.desktop }}px;
+                height: {{ module.styles.icon_size.desktop }}px;
+            }
+            @media (max-width: 767px) {
+                .rating .score i {
+                    width: {{ module.styles.icon_size.desktop }}px;
+                    height: {{ module.styles.icon_size.desktop }}px;
+                }
+            }
+        {% end_scope_css %}
+    </style>
+{% end_require_css %}

@@ -1,0 +1,7 @@
+/* Rating module stylesheet */
+/* ***************************************** */
+
+/* Rating stars */
+.rating .rating-stars {
+    display: flex;
+}
