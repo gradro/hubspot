@@ -1,0 +1,45 @@
+[
+  {
+   "choices": [
+    [
+     "facebook",
+     "Facebook"
+    ],
+    [
+     "linkedin",
+     "LinkedIn"
+    ],
+    [
+     "mail",
+     "Mail"
+    ],
+    [
+     "whatsapp",
+     "WhatsApp"
+    ],
+    [
+     "telegram",
+     "Telegram"
+    ]
+   ],
+   "default": [
+    "facebook",
+    "facebook",
+    "facebook"
+   ],
+   "display": "select",
+   "display_width": null,
+   "id": "8d15a98d-8b55-aed8-0d79-35aff5c66741",
+   "label": "Plattform",
+   "locked": false,
+   "multiple": false,
+   "name": "platform",
+   "occurrence": {
+    "default": 3
+   },
+   "preset": null,
+   "reordering_enabled": true,
+   "required": false,
+   "type": "choice"
+  }
+ ]

@@ -1,0 +1,38 @@
+{% set pageUrl = content.absoluteUrl %}
+{% set pageTitle = content.name ? content.name|striptags : pega_meta.html_title|urlencode %}
+    
+<div class="share">
+      
+    <div class="share-inner">
+      {%- for social in module.platform -%}
+        
+        {%- if social == 'facebook' -%}
+          <a href="https://www.facebook.com/sharer.php?u={{ pageUrl }}" rel="noopener" class="share-item {{ social }}" title="Share on Facebook">
+            {% icon name="Facebook F", icon_set="fontawesome-5.14.0", no_wrapper=True %}
+          </a>
+        {%- elif social == 'linkedin' -%}
+          <a href="https://www.linkedin.com/shareArticle?url={{ pageUrl }}&title={{ pageTitle }}" rel="noopener" class="share-item {{ social }}" title="Share on LinkedIn">
+            {% icon name="LinkedIn In", icon_set="fontawesome-5.14.0", no_wrapper=True %} 
+          </a>
+        {%- elif social == 'mail' -%}
+          <a href="mailto:?subject={{ pageTitle }}&body=Schauen Sie sich diesen Beitrag an: {{ pageUrl }}" rel="noopener" class="share-item {{ social }}" title="Share by Email">
+            {% icon name="envelope", no_wrapper=True %}
+          </a>
+        {%- elif social == 'whatsapp' -%}
+          <a href="https://api.whatsapp.com/send?text={{ pageTitle + '%20' + pageUrl }}" class="share-item {{ social }}" rel="noopener" title="Share on WhatsApp">
+            {% icon name="{{ social }}", no_wrapper=True %}
+          </a>
+        {%- elif social == 'telegram' -%}
+          <a href="https://t.me/share/url?url={{ pageUrl }}&text={{ pageTitle }}" class="share-item {{ social }}" rel="noopener" title="Share on Telegram">
+            {% icon name="{{ social }}", no_wrapper=True %}
+          </a>
+        {%- endif -%}  
+      
+      {%- endfor -%}
+    </div>
+      
+</div>
+    
+    
+    
+    
