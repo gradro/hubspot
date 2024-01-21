@@ -2,6 +2,12 @@
 <p>Feel free to use</p>
 <br>
 
+<h2>Accordion Module</h2>
+<p>Accessible accordion module for HubSpot.</p>
+<p>This module allows you to create multiple sections of accordions on your website.</p>
+<img src="https://github.com/gradro/hubspot/assets/136386898/91ff55f7-5977-4bd2-8beb-042b192c9407">
+
+
 <h2>Rating Module</h2>
 <p>Generate rating stars based on choosen number.</p>
 <img src="https://github.com/gradro/hubspot/assets/136386898/bddc5774-a964-4366-9996-70a379e99418">
