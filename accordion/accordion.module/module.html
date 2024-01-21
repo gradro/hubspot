@@ -1,0 +1,60 @@
+{# Accordion (Configuration) #}
+{########################################}
+
+{%- set categories = module.categories -%}
+
+  
+{# Accordion (Macro Accordion Tab) #}
+{########################################}
+  
+  {% macro accordion_tab( item, index ) %}
+    
+    <div class="accordion-item">
+      {{ '<' ~ module.settings.tab_headline_type ~ ' class="accordion-headline">' }}
+      <button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="{{ name }}_accordion_{{ index }}" data-accordion="{{ name }}_accordion_{{ index }}">
+          <span class="accordion-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+          </span>
+          <span class="accordion-title">
+            {{ item.title }}
+         </span>
+      </button> 
+      {{ '</' ~ module.settings.tab_headline_type ~ '>' }}
+  
+      <div class="accordion-content" id="{{ name }}_accordion_{{ index }}">
+        {{ item.content }}
+      </div>
+    </div>
+  
+  {% endmacro %}
+  
+  {# Render #}
+  <div class="accordion-wrapper">
+    <div class="accordion-inner">
+        
+        {% if categories %}
+          {%- for category in categories -%}
+            <section class="accordion-category">
+              
+              {% set cat_index = cat_index + 1 %}
+              
+              {# Category title #}
+              {%- if category.title -%}
+                {{ '<' + module.settings.headline_type + '>' }}
+                   {{ category.title }}
+                {{ '</' + module.settings.headline_type + '>' }}
+              {%- endif -%}
+  
+              <div class="accordion-list">
+                
+                {% for accordion in category.accordions %}
+                    {{ accordion_tab( accordion, (cat_index ~ '_' ~ loop.index)  ) }}
+                {% endfor %}
+                
+              </div>
+            </section>
+          {%- endfor -%}
+        {% endif %}
+      
+    </div>
+  </div>

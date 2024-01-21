@@ -1,0 +1,220 @@
+[
+  {
+   "children": [
+    {
+     "allow_new_line": false,
+     "default": "Accordion Group",
+     "display_width": null,
+     "id": "a5b05a57-6def-12db-b42c-d58a7af2e251",
+     "label": "Category title",
+     "locked": false,
+     "name": "title",
+     "placeholder": "Accordion Tab",
+     "required": false,
+     "show_emoji_picker": false,
+     "type": "text",
+     "validation_regex": ""
+    },
+    {
+     "children": [
+      {
+       "allow_new_line": false,
+       "default": "Accordion Tab",
+       "display_width": null,
+       "id": "fb870824-2654-8854-4240-a0fc5f539ae3",
+       "label": "Accordion Title",
+       "locked": false,
+       "name": "title",
+       "required": false,
+       "show_emoji_picker": false,
+       "type": "text",
+       "validation_regex": ""
+      },
+      {
+       "default": "<p><span>Accordions are commonly used to present a lot of information in a limited space while keeping the content organized and easily navigable. They are often used for FAQs (Frequently Asked Questions), product descriptions, or any situation where you want to show content progressively as the user interacts with it.</span></p>",
+       "display_width": null,
+       "id": "042f61dd-313d-4e51-b66e-6f4f6d4e9585",
+       "label": "Accordion Content",
+       "locked": false,
+       "name": "content",
+       "required": false,
+       "type": "richtext"
+      }
+     ],
+     "default": [
+      {
+       "title": "Accordion Tab",
+       "content": "<p><span>Accordions are commonly used to present a lot of information in a limited space while keeping the content organized and easily navigable. They are often used for FAQs (Frequently Asked Questions), product descriptions, or any situation where you want to show content progressively as the user interacts with it.</span></p>"
+      },
+      {
+       "title": "Accordion Tab",
+       "content": "<p><span>Accordions are commonly used to present a lot of information in a limited space while keeping the content organized and easily navigable. They are often used for FAQs (Frequently Asked Questions), product descriptions, or any situation where you want to show content progressively as the user interacts with it.</span></p>"
+      },
+      {
+       "title": "Accordion Tab",
+       "content": "<p><span>Accordions are commonly used to present a lot of information in a limited space while keeping the content organized and easily navigable. They are often used for FAQs (Frequently Asked Questions), product descriptions, or any situation where you want to show content progressively as the user interacts with it.</span></p>"
+      }
+     ],
+     "display_width": null,
+     "expanded": false,
+     "id": "041896ce-f168-0a24-7693-87cf64bcac26",
+     "label": "Accordions",
+     "locked": false,
+     "name": "accordions",
+     "occurrence": {
+      "default": 3,
+      "sorting_label_field": "fb870824-2654-8854-4240-a0fc5f539ae3"
+     },
+     "required": false,
+     "tab": "CONTENT",
+     "type": "group"
+    }
+   ],
+   "default": [
+    {
+     "title": "Accordion Group",
+     "accordions": [
+      {
+       "title": "Accordion Tab",
+       "content": "<p><span>Accordions are commonly used to present a lot of information in a limited space while keeping the content organized and easily navigable. They are often used for FAQs (Frequently Asked Questions), product descriptions, or any situation where you want to show content progressively as the user interacts with it.</span></p>"
+      },
+      {
+       "title": "Accordion Tab",
+       "content": "<p><span>Accordions are commonly used to present a lot of information in a limited space while keeping the content organized and easily navigable. They are often used for FAQs (Frequently Asked Questions), product descriptions, or any situation where you want to show content progressively as the user interacts with it.</span></p>"
+      },
+      {
+       "title": "Accordion Tab",
+       "content": "<p><span>Accordions are commonly used to present a lot of information in a limited space while keeping the content organized and easily navigable. They are often used for FAQs (Frequently Asked Questions), product descriptions, or any situation where you want to show content progressively as the user interacts with it.</span></p>"
+      }
+     ]
+    },
+    {
+     "title": "Accordion Group",
+     "accordions": [
+      {
+       "title": "Accordion Tab",
+       "content": "<p><span>Accordions are commonly used to present a lot of information in a limited space while keeping the content organized and easily navigable. They are often used for FAQs (Frequently Asked Questions), product descriptions, or any situation where you want to show content progressively as the user interacts with it.</span></p>"
+      },
+      {
+       "title": "Accordion Tab",
+       "content": "<p><span>Accordions are commonly used to present a lot of information in a limited space while keeping the content organized and easily navigable. They are often used for FAQs (Frequently Asked Questions), product descriptions, or any situation where you want to show content progressively as the user interacts with it.</span></p>"
+      },
+      {
+       "title": "Accordion Tab",
+       "content": "<p><span>Accordions are commonly used to present a lot of information in a limited space while keeping the content organized and easily navigable. They are often used for FAQs (Frequently Asked Questions), product descriptions, or any situation where you want to show content progressively as the user interacts with it.</span></p>"
+      }
+     ]
+    }
+   ],
+   "display_width": null,
+   "expanded": false,
+   "id": "79785e52-976d-2701-6248-c07e830c7759",
+   "label": "Categories",
+   "locked": false,
+   "name": "categories",
+   "occurrence": {
+    "default": 2,
+    "sorting_label_field": "a5b05a57-6def-12db-b42c-d58a7af2e251"
+   },
+   "required": false,
+   "tab": "CONTENT",
+   "type": "group"
+  },
+  {
+   "children": [
+    {
+     "choices": [
+      [
+       "h2",
+       "H2"
+      ],
+      [
+       "h3",
+       "H3"
+      ],
+      [
+       "h4",
+       "H4"
+      ],
+      [
+       "h5",
+       "H5"
+      ],
+      [
+       "h6",
+       "H6"
+      ],
+      [
+       "strong",
+       "Strong"
+      ]
+     ],
+     "default": "h2",
+     "display": "select",
+     "display_width": null,
+     "id": "1b7b0ac9-29f3-156a-6709-43eaa94f503b",
+     "label": "Category Headline Type",
+     "locked": false,
+     "multiple": false,
+     "name": "headline_type",
+     "preset": null,
+     "reordering_enabled": true,
+     "required": true,
+     "type": "choice"
+    },
+    {
+     "choices": [
+      [
+       "h2",
+       "H2"
+      ],
+      [
+       "h3",
+       "H3"
+      ],
+      [
+       "h4",
+       "H4"
+      ],
+      [
+       "h5",
+       "H5"
+      ],
+      [
+       "h6",
+       "H6"
+      ],
+      [
+       "strong",
+       "Strong"
+      ]
+     ],
+     "default": "h3",
+     "display": "select",
+     "display_width": null,
+     "id": "6f51528a-b5a6-3845-cad2-15814b857767",
+     "label": "Tab Headline Type",
+     "locked": false,
+     "multiple": false,
+     "name": "tab_headline_type",
+     "preset": null,
+     "reordering_enabled": true,
+     "required": true,
+     "type": "choice"
+    }
+   ],
+   "default": {
+    "headline_type": "h2",
+    "tab_headline_type": "h3"
+   },
+   "display_width": null,
+   "expanded": false,
+   "id": "a31968c1-ff62-b675-a453-2d11f29178c4",
+   "label": "Settings",
+   "locked": false,
+   "name": "settings",
+   "required": false,
+   "tab": "CONTENT",
+   "type": "group"
+  }
+ ]
