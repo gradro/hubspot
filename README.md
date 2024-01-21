@@ -6,7 +6,7 @@
 <p>Generate rating stars based on choosen number.</p>
 <img src="https://github.com/gradro/hubspot/assets/136386898/bddc5774-a964-4366-9996-70a379e99418">
 
-
+<br>
 <h2>Table of Contents Module</h2>
 <p>Autogenerate (using javascript) table of contents for blog article.</p>
 <p>Simply add this module to your page or blog template and put <em>post-inner</em> class to your article wrapper. This module supports also heading classes e.g. <em>.h2, .h3</em> used on <em>strong</em> tag.</p>
