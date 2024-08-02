@@ -53,9 +53,6 @@
     flex-grow: 1;
     max-width: 100%;
 }
-.container-fluid {
-    *zoom: 1;
-}
 .container-fluid:before, .container-fluid:after {
     display: table;
     content: "";
